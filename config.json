@@ -1,0 +1,102 @@
+{
+  "websiteName": "WriteDocs Documentation",
+  "description": "Explore our documentation to learn how to create beautiful, scalable developer portals with WriteDocs.",
+  "images": {
+    "logo": "media/logo.png",
+    "favicon": "media/favicon.ico",
+    "darkLogo": ""
+  },
+  "languages": [
+    "en"
+  ],
+  "styles": {
+    "mainColor": "#0029F5",
+    "darkModeMainColor": "#F0F0FF",
+    "navbarColor": "#000621",
+    "navbarDarkModeColor": "#000621",
+    "pagination": false
+  },
+  "apiFiles": [
+    "example.yml"
+  ],
+  "homepage": "/overview",
+  "changelog": false,
+  "navbar": [
+    {
+      "label": "Guides",
+      "sidebarRef": "guides"
+    },
+    {
+      "label": "API Reference",
+      "dropdown": [
+        {
+          "label": "v1.0",
+          "sidebarRef": "apiReference"
+        }
+      ]
+    }
+  ],
+  "externalLinks": [],
+  "sidebars": [
+    {
+      "sidebarRef": "guides",
+      "categories": [
+        {
+          "categoryName": "Getting Started",
+          "pages": [
+            "getting-started/overview",
+            {
+              "page": "getting-started/quickstart/quickstart",
+              "groupName": "Quickstart",
+              "subpages": [
+                "getting-started/quickstart/beginners-guide"
+              ]
+            },
+            "getting-started/global-settings",
+            "getting-started/local-development"
+          ]
+        },
+        {
+          "categoryName": "Creating Pages",
+          "pages": [
+            "creating-pages/mdx-pages",
+            "creating-pages/api-pages",
+            "creating-pages/markdown-basics",
+            {
+              "page": "creating-pages/components",
+              "groupName": "Components",
+              "subpages": [
+                "creating-pages/components/accordions",
+                "creating-pages/components/callouts",
+                "creating-pages/components/cards",
+                "creating-pages/components/codeblocks",
+                "creating-pages/components/media",
+                "creating-pages/components/custom-components"
+              ]
+            }
+          ]
+        },
+        {
+          "categoryName": "Use Cases",
+          "pages": [
+            "use-cases/free-plan",
+            "use-cases/multi-product",
+            "use-cases/versioning"
+          ]
+        }
+      ]
+    },
+    {
+      "sidebarRef": "apiReference",
+      "categories": [
+        {
+          "categoryName": "Example",
+          "pages": [
+            "reference/example/get-items",
+            "reference/example/create-item"
+          ]
+        }
+      ]
+    }
+  ]
+}
